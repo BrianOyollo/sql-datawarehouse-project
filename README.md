@@ -132,9 +132,9 @@ Run the scripts to create **Gold Layer** views (fact and dimension views):
 Run SQL queries to check if the data is loaded correctly:
 
 ```sql
-SELECT * FROM bronze.<table_name> LIMIT 10;
-SELECT * FROM silver.<table_name> LIMIT 10;
-SELECT * FROM gold.<table_name> LIMIT 10;
+SELECT * FROM gold.dim_customers LIMIT 10;
+SELECT * FROM gold.dim_products LIMIT 10;
+SELECT * FROM gold.fact_sales LIMIT 10;
 ```
 
 ---
